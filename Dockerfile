@@ -4,7 +4,7 @@ COPY ./requirements.txt /gitactions/requirements.txt
 
 WORKDIR /gitactions
 
-RUN pip install flask == 1.0.0
+RUN pip install --no-cache-dir flask == 1.0.0
 
 COPY gitactions/* /gitactions
 
