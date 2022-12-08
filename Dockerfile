@@ -1,3 +1,5 @@
+FROM python:3.8
+
 COPY ./requirements.txt / c/dev/Projects/Excercises/gitactions/requirements.txt
 
 WORKDIR /gitactions
