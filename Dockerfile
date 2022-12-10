@@ -1,12 +1,8 @@
-FROM python:3.8
+FROM php:7.2-apache
 
-COPY ./requirements.txt /gitactions/requirements.txt
+RUN apt-get -y update \
+&& apt-get install -y libicu-dev \
+&& docker-php-ext-configure intl \
+&& docker-php-ext-install intl 
 
-WORKDIR /gitactions
-
-RUN pip install --no-cache-dir flask == 1.0.0
-
-COPY gitactions/* /gitactions
-
-ENTRYPOINT [ "python" ]
-CMD [ "app.py" ]
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
