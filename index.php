@@ -1,8 +1,9 @@
 <?php
 header("contant-type: text");
+$servername = "127.0.0.1";
 $host = "db";
 $username = "root";
-$pw = "my!!!root!!!pw";
+$pw = "root";
 
 $conn = new mysqli($host,$username,$pw);
 
