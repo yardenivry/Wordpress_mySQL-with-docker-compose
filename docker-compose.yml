@@ -16,8 +16,6 @@ services:
     image: mysql:latest
     restart: unless-stopped
     environment:
-      MYSQL_HOST: db
-      MYSQL_ROOT_USERNAME: ROOT
       MYSQL_ROOT_PASSWORD: root
     container_name: myphpapp-db
       
