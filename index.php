@@ -12,6 +12,6 @@ if ($conn->connect_errno > 0) {
     echo "DB Connection successful\n";
     $result=mysqli_query($conn,"SHOW DATABASES;");
     while ($row = mysqli_fetch_row( $result ) ){
-        echo $row[0]."\n";
-    }
+       echo $row[0]."\n";
+   }
 }
