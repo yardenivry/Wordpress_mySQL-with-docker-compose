@@ -1,1 +1,1 @@
-This the the last and the finished project of this course, it involving all the things that i learnt + working Wordpress webserver.
+This is the last and the final completed project of Docker-compose course, it involving all the things that i learned + working Wordpress webserver.
